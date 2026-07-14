@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: Responsive Heading</title>
+    <style>
+        /* Desktop First (Base Style) */
+        h1 {
+            font-size: 48px;
+        }
+
+        /* Tablet (Widths up to 1024px) */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 36px;
+            }
+        }
+
+        /* Mobile (Widths up to 768px) */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Heading</h1>
+</body>
+</html>
+TASK2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Background Colors</title>
+    <style>
+        /* Desktop First (Base Style) */
+        body {
+            background-color: lightblue;
+        }
+
+        /* Tablet (Widths up to 1024px) */
+        @media (max-width: 1024px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        /* Mobile (Widths up to 768px) */
+        @media (max-width: 768px) {
+            body {
+                background-color: lightgray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Change my screen size to see background colors change!</h1>
+</body>
+</html>
+TASK3:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Paragraph Width</title>
+    <style>
+        /* Desktop First (Base Style) */
+        p {
+            width: 70%;
+            margin: 0 auto; /* Centers the paragraph */
+            line-height: 1.6;
+        }
+
+        /* Tablet (Widths up to 1024px) */
+        @media (max-width: 1024px) {
+            p {
+                width: 90%;
+            }
+        }
+
+        /* Mobile (Widths up to 768px) */
+        @media (max-width: 768px) {
+            p {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>This paragraph changes its width dynamically based on your device screen size. It stays perfectly readable whether you view it on a desktop, tablet, or a mobile screen.</p>
+</body>
+</html>
+TASK4:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4: Three Boxes</title>
+    <style>
+        /* Base Layout (Desktop First) */
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            flex: 1;
+            background-color: coral;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Mobile (Widths up to 768px) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
+TASK5:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5: Hide Image</title>
+    <style>
+        /* Desktop First (Base Style) */
+        .responsive-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Mobile (Widths up to 768px) */
+        @media (max-width: 768px) {
+            .responsive-img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Below is the responsive image</h1>
+    <img src="https://placeholder.com" alt="Sample Image" class="responsive-img">
+</body>
+</html>
+TASK6:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6: Navigation Direction</title>
+    <style>
+        /* General layout resets */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Desktop: Horizontal layout */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            background-color: #333;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Mobile: Vertical layout */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav a {
+                border-bottom: 1px solid #444;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+TASK7:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Toggle Menu Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            padding: 10px 20px;
+        }
+
+        /* Desktop: Full Menu visible, Button hidden */
+        .menu-btn {
+            display: none;
+            background: coral;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Mobile: Hide Full Menu, Show Button */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-btn">Menu ☰</button>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+TASK8:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8: Responsive Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Desktop First: Large Logo */
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: navy;
+            border: 4px solid navy;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        /* Tablet: Medium Logo */
+        @media (max-width: 1024px) {
+            .logo {
+                font-size: 32px;
+                border-width: 3px;
+                padding: 8px 16px;
+            }
+        }
+
+        /* Mobile: Small Logo */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 20px;
+                border-width: 2px;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">MY_LOGO</div>
+</body>
+</html>
+TASK9:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9: Responsive Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Desktop: Navigation Beside Logo */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Mobile: Navigation Below Logo */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BrandLogo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>
+TASK10:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10: Four Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Desktop: 4 Columns */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Tablet: 2 Columns */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile: 1 Column */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card"><h3>Card 1</h3><p>Content goes here.</p></div>
+        <div class="card"><h3>Card 2</h3><p>Content goes here.</p></div>
+        <div class="card"><h3>Card 3</h3><p>Content goes here.</p></div>
+        <div class="card"><h3>Card 4</h3><p>Content goes here.</p></div>
+    </div>
+</body>
+</html>
+
+TASK11:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11: Photo Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 15px;
+            background-color: #222;
+        }
+
+        /* Desktop: 5 images per row */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        /* Tablet: 3 images per row */
+        @media (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Mobile: 2 images per row */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">Img 1</div>
+        <div class="gallery-item">Img 2</div>
+        <div class="gallery-item">Img 3</div>
+        <div class="gallery-item">Img 4</div>
+        <div class="gallery-item">Img 5</div>
+        <div class="gallery-item">Img 6</div>
+    </div>
+</body>
+</html>
+TASK12:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12: Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Desktop: Sidebar + Main Content side by side */
+        .dashboard {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        /* Mobile: Sidebar moves above the content */
+        @media (max-width: 768px) {
+            .dashboard {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: auto;
+                min-height: auto;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Sidebar Menu</h2>
+            <p>Links & Navigation</p>
+        </aside>
+        <main class="main-content">
+            <h1>Main Dashboard Content</h1>
+            <p>Primary data display zone.</p>
+        </main>
+    </div>
+</body>
+</html>
+TASK13:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13: Pricing Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        /* Desktop: 3 plans in a row */
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .plan {
+            background-color: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .plan.featured {
+            border-color: #3498db;
+            background-color: #f2f9fe;
+        }
+
+        /* Tablet: 2 plans per row */
+        @media (max-width: 1024px) {
+            .pricing-table {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile: 1 plan per row */
+        @media (max-width: 600px) {
+            .pricing-table {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p>$9/mo</p>
+        </div>
+        <div class="plan featured">
+            <h2>Pro</h2>
+            <p>$29/mo</p>
+        </div>
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <p>$99/mo</p>
+        </div>
+    </div>
+</body>
+</html>
+TASK14:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14: Responsive Typography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color: #fcfcfc;
+        }
+
+        /* Desktop First (Base Styles) */
+        h1 {
+            font-size: 44px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5; /* Default desktop line-height */
+            color: #333;
+        }
+
+        /* Tablet (Widths up to 1024px) */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* Mobile (Widths up to 600px) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 1.8; /* Increased line-height for mobile readability */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Typography Design</h1>
+    <p>This paragraph adapts its styling across different viewports. On larger desktop monitors, the text stays compact and balanced. When scaled down to smaller mobile viewports, the font size decreases slightly while the line-height expands explicitly to give sentences more breathing room, preventing text crowding on narrow devices.</p>
+</body>
+</html>
+TASK15:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15: Responsive Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Desktop First (Base Styles) */
+        .responsive-btn {
+            width: 200px;
+            height: 60px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+        }
+
+        .responsive-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Mobile (Widths up to 600px) */
+        @media (max-width: 600px) {
+            .responsive-btn {
+                width: 100%;
+                height: 50px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="responsive-btn">Click Here</button>
+</body>
+</html>
+TASK16:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 16: Responsive Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Desktop First (Base Styles) */
+        .login-box {
+            width: 400px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Tablet (Widths up to 1024px) */
+        @media (max-width: 1024px) {
+            .login-box {
+                width: 300px;
+            }
+        }
+
+        /* Mobile (Widths up to 600px) */
+        @media (max-width: 600px) {
+            .login-box {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2 style="text-align: center; margin-top: 0;">Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
+TASK17:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 17: Responsive Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 40px 20px;
+        }
+
+        /* Desktop: 4 columns */
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Tablet: 2 columns */
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile: 1 column */
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>We provide standard web infrastructure solutions globally.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Help Desk</li>
+                    <li>Status</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: info@domain.com<br>Phone: +1 234 567</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+TASK18:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 18: Responsive Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Desktop: Image left, Details right */
+        .profile-card {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ccc;
+        }
+
+        .profile-details {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .profile-details h2 {
+            margin: 0 0 10px 0;
+        }
+
+        /* Mobile: Image top, Details below */
+        @media (max-width: 600px) {
+            .profile-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .profile-img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://placeholder.com" alt="Profile Headshot" class="profile-img">
+        <div class="profile-details">
+            <h2>Jane Doe</h2>
+            <p style="color: #777; margin: 0 0 15px 0;">Senior UX Designer</p>
+            <p>Passionate about crafting dynamic, fully accessible web layout structures using lightweight CSS rules.</p>
+        </div>
+    </div>
+</body>
+</html>
+TASK19:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 19: Responsive Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+
+        /* Desktop Layout */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Mobile: Convert rows into stacked cards */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead {
+                display: none; /* Hide traditional headers */
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                padding: 10px;
+            }
+
+            td {
+                border: none;
+                padding: 8px;
+                position: relative;
+                padding-left: 45%;
+                text-align: right;
+            }
+
+            /* Dynamically append custom horizontal text header labels */
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 40%;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="ID">#1001</td>
+                <td data-label="Name">Alice Johnson</td>
+                <td data-label="Status" style="color: green;">Active</td>
+            </tr>
+            <tr>
+                <td data-label="ID">#1002</td>
+                <td data-label="Name">Bob Smith</td>
+                <td data-label="Status" style="color: red;">Suspended</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+TASK20:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 20: College Website Homepage</title>
+    <style>
+        /* Base Setup */
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        section { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+        h2 { text-align: center; margin-top: 0; font-size: 32px; }
+
+        /* Header & Logo */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #fff; border-bottom: 1px solid #eee; }
+        .logo { font-size: 24px; font-weight: bold; color: #003366; }
+
+        /* Navigation Menu Strategy */
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; gap: 20px; }
+        nav a { text-decoration: none; color: #333; font-weight: bold; }
+
+        /* Hero Banner */
+        .hero { background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://placeholder.com') no-center/cover; color: white; text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 42px; margin: 0; }
+        .hero p { font-size: 20px; }
+
+        /* Layout Grid Blocks */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+        /* Components Card Settings */
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 6px; background: #fff; }
+        .faculty-card { text-align: center; }
+        .faculty-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+        
+        /* Contact Form */
+        form { display: flex; flex-direction: column; max-width: 600px; margin: 0 auto; gap: 15px; }
+        form input, form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        form button { padding: 12px; background: #003366; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+
+        /* Footer */
+        footer { background: #111; color: #aaa; text-align: center; padding: 20px; font-size: 14px; }
+
+        /* ==================== TABLET STYLES ==================== */
+        @media (max-width: 1024px) {
+            h2 { font-size: 28px; }
+            .hero h1 { font-size: 34px; }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); } /* 3 col switches to 2 */
+        }
+
+        /* ==================== MOBILE STYLES ==================== */
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; text-align: center; }
+            nav ul { flex-direction: column; gap: 10px; align-items: center; }
+            h2 { font-size: 24px; }
+            .hero h1 { font-size: 26px; }
+            .hero p { font-size: 16px; }
+            .grid-3, .grid-2 { grid-template-columns: 1fr; } /* All grids stack to a single column */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">EduCollege</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1>Shaping Future Leaders</h1>
+        <p>Join our fully dynamic learning infrastructure community today.</p>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Our Institution</h2>
+        <p style="text-align:center; max-width: 800px; margin: 0 auto;">Founded on academic excellence principles, our platform scales student resources systematically using responsive infrastructure frameworks designed for continuous learning growth paths.</p>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" style="background:#f9f9f9;">
+        <h2>Popular Courses</h2>
+        <div class="grid-3">
+            <div class="card"><h3>Computer Science</h3><p>Master modern computation logic rules.</p></div>
+            <div class="card"><h3>Business Design</h3><p>Scale business management insights smoothly.</p></div>
+            <div class="card"><h3>Data Analytics</h3><p>Extract performance metrics efficiently.</p></div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section id="faculty">
+        <h2>Expert Faculty</h2>
+        <div class="grid-3">
+            <div class="card faculty-card">
+                <img src="https://placeholder.com" alt="Faculty member">
+                <h3>Dr. Alan Turing</h3><p>Professor of Computing</p>
+            </div>
+            <div class="card faculty-card">
+                <img src="https://placeholder.com" alt="Faculty member">
+                <h3>Ada Lovelace</h3><p>Head of Analysis</p>
+            </div>
+            <div class="card faculty-card">
+                <img src="https://placeholder.com" alt="Faculty member">
+                <h3>Grace Hopper</h3><p>Lead Compiler Architect</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials -->
+    <section id="testimonials" style="background:#f9f9f9;">
+        <h2>What Students Say</h2>
+        <div class="grid-2">
+            <div class="card">
+                <p>"The single-column layout switch on mobile devices lets me check my course schedules comfortably during transit updates."</p>
+                <strong>— Alex R.</strong>
+            </div>
+            <div class="card">
+                <p>"Flexible layout structure models give our global study teams robust desktop presentation environments."</p>
+                <strong>— Sarah M.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Connect With Us</h2>
+        <form action="#" onsubmit="event.preventDefault(); alert('Query submitted.');">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EduCollege. All Rights Layout Inspected.</p>
+    </footer>
+
+</body>
+</html>

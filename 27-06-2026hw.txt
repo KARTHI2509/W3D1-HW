@@ -1,0 +1,2106 @@
+TASK1:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Page</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .profile {
+            width: 400px;
+            margin: 50px auto;
+            border: 3px solid black;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkred;
+        }
+
+        p {
+            color: green;
+            font-size: 18px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border: 2px solid gray;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <h1>Student Profile</h1>
+        <img src="profile.jpg" alt="Profile Picture">
+        <h2>Name: Karthik</h2>
+        <p><b>Roll Number:</b> 23A91A0501</p>
+        <p><b>Department:</b> Computer Science Engineering (AI & ML)</p>
+        <p><b>College Name:</b> Madanapalle Institute of Technology & Science</p>
+    </div>
+</body>
+</html>
+TASK2:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Resume</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .resume {
+            width: 800px;
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: darkblue;
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .section {
+            background-color: #f9f9f9;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        ul {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <h1>Karthik</h1>
+            <p>Web Developer | AI & ML Student</p>
+        </div>
+
+        <div class="section">
+            <h2>About</h2>
+            <p>Motivated Computer Science student passionate about web development, AI, and machine learning.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>B.Tech in Computer Science Engineering (AI & ML)</p>
+            <p>Madanapalle Institute of Technology & Science</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Machine Learning</li>
+                <li>SQL, MongoDB</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <p>Garbage Classification System</p>
+            <p>CraftHub Website</p>
+            <p>College Canteen Management System</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Email: karthik@example.com</p>
+            <p>Phone: 9876543210</p>
+        </div>
+    </div>
+</body>
+</html>
+TASK3:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            background-color: #fdf6e3;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .menu {
+            width: 900px;
+            margin: auto;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkred;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: darkgreen;
+            font-size: 30px;
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            background-color: #ffe4b5;
+            transform: scale(1.03);
+        }
+
+        .food-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .food-name {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+
+        img {
+            width: 120px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Food Paradise Menu</h1>
+
+        <h2>Starters</h2>
+
+        <div class="item">
+            <img src="starter1.jpg" alt="Spring Rolls">
+            <div class="food-info">
+                <div class="food-name">Spring Rolls</div>
+            </div>
+            <div class="price">₹120</div>
+        </div>
+
+        <div class="item">
+            <img src="starter2.jpg" alt="Paneer Tikka">
+            <div class="food-info">
+                <div class="food-name">Paneer Tikka</div>
+            </div>
+            <div class="price">₹180</div>
+        </div>
+
+        <h2>Main Course</h2>
+
+        <div class="item">
+            <img src="main1.jpg" alt="Biryani">
+            <div class="food-info">
+                <div class="food-name">Chicken Biryani</div>
+            </div>
+            <div class="price">₹250</div>
+        </div>
+
+        <div class="item">
+            <img src="main2.jpg" alt="Pizza">
+            <div class="food-info">
+                <div class="food-name">Veg Pizza</div>
+            </div>
+            <div class="price">₹220</div>
+        </div>
+
+        <h2>Desserts</h2>
+
+        <div class="item">
+            <img src="dessert1.jpg" alt="Ice Cream">
+            <div class="food-info">
+                <div class="food-name">Ice Cream</div>
+            </div>
+            <div class="price">₹90</div>
+        </div>
+
+        <div class="item">
+            <img src="dessert2.jpg" alt="Brownie">
+            <div class="food-info">
+                <div class="food-name">Chocolate Brownie</div>
+            </div>
+            <div class="price">₹110</div>
+        </div>
+    </div>
+</body>
+</html>
+TAS4:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Information Card</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .price {
+            font-size: 22px;
+            color: green;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .rating {
+            font-size: 18px;
+            color: orange;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="product.jpg" alt="Product Image">
+        <h2>Wireless Headphones</h2>
+        <div class="price">₹2,999</div>
+        <div class="rating">★★★★☆ (4.5)</div>
+        <button>Add to Cart</button>
+    </div>
+</body>
+</html>
+TASK5:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Notice Board</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .board {
+            width: 800px;
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .notice {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+
+        .date {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .important {
+            background-color: #fff3cd;
+            border-left: 6px solid orange;
+        }
+
+        .urgent {
+            background-color: #f8d7da;
+            border-left: 6px solid red;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <h1>College Notice Board</h1>
+
+        <div class="notice">
+            <h2>Semester Exam Schedule Released</h2>
+            <p class="date">27 June 2026</p>
+            <p>The semester examination timetable has been uploaded on the portal.</p>
+        </div>
+
+        <div class="notice important">
+            <h2>Project Submission Deadline</h2>
+            <p class="date">29 June 2026</p>
+            <p>Final year project reports must be submitted before the deadline.</p>
+        </div>
+
+        <div class="notice urgent">
+            <h2>Fee Payment Last Date</h2>
+            <p class="date">30 June 2026</p>
+            <p>Pay your semester fees immediately to avoid penalties.</p>
+        </div>
+
+        <div class="notice">
+            <h2>Workshop on AI & ML</h2>
+            <p class="date">02 July 2026</p>
+            <p>A workshop on Artificial Intelligence and Machine Learning will be conducted in the seminar hall.</p>
+        </div>
+    </div>
+</body>
+</html>
+TASK6:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Cards</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 220px;
+            height: 180px;
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid black;
+            background-color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>Information about academics.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>Information about sports.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 3</h2>
+        <p>Information about events.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 4</h2>
+        <p>Information about placements.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 5</h2>
+        <p>Information about workshops.</p>
+    </div>
+</body>
+</html>
+TASK7:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Card</title>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 350px;
+            padding: 25px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            color: darkblue;
+        }
+
+        h3 {
+            margin: 8px 0;
+            color: gray;
+        }
+
+        p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="logo.png" alt="Company Logo">
+        <h1>Karthik</h1>
+        <h3>Web Developer</h3>
+        <p>📞 +91 9876543210</p>
+    </div>
+</body>
+</html>
+TASK8:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .login-box {
+            width: 350px;
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px gray;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: darkblue;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login Form</h2>
+        <input type="text" placeholder="Enter Username">
+        <input type="password" placeholder="Enter Password">
+        <button>Login</button>
+    </div>
+</body>
+</html>
+TASK9:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Invitation Card</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .card {
+            width: 400px;
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px gray;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkred;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Annual College Fest 2026</h1>
+        <p><b>Date:</b> 10 July 2026</p>
+        <p><b>Time:</b> 10:00 AM</p>
+        <p><b>Venue:</b> MITS Auditorium</p>
+        <button>RSVP</button>
+    </div>
+</body>
+</html>
+TASK10:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Card</title>
+    <style>
+        body {
+            background-color: #eef2f3;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .card {
+            width: 320px;
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px gray;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 35px;
+            color: green;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Premium Plan</h1>
+        <div class="price">₹999 / Month</div>
+        <ul>
+            <li>Unlimited Access</li>
+            <li>24/7 Support</li>
+            <li>Free Updates</li>
+            <li>Premium Features</li>
+        </ul>
+        <button>Buy Now</button>
+    </div>
+</body>
+</html>
+TASK11:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: darkblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome</h1>
+        <p>This is a fixed navigation bar example.</p>
+    </div>
+</body>
+</html>
+TASK12:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Back to Top Button</title>
+    <style>
+        body {
+            height: 1500px;
+            font-family: Arial;
+        }
+
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: red;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll Down</h1>
+
+    <a href="#" class="top-btn">↑</a>
+</body>
+</html>
+TASK13:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notification Badge</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100px;
+            margin: 100px auto;
+            font-size: 50px;
+        }
+
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        🔔
+        <div class="badge">9</div>
+    </div>
+</body>
+</html>
+TASK14:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Overlay</title>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,0,0,0.8);
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="sale.jpg" alt="Sale Image">
+        <div class="text">SALE 50%</div>
+    </div>
+</body>
+</html>
+TASK15:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            height: 1500px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: green;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="content">
+        <h1>Sticky Navigation Example</h1>
+        <p>Scroll down to see the sticky effect.</p>
+    </div>
+</body>
+</html>
+TASK16:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: darkblue;
+            padding: 15px 20px;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Logo</h2>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+</body>
+</html>
+TASK17:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Cards</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 200px;
+            padding: 20px;
+            background: lightgray;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">Web Development</div>
+        <div class="card">App Development</div>
+        <div class="card">UI Design</div>
+        <div class="card">SEO Services</div>
+    </div>
+</body>
+</html>
+TASK18:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Cards</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 220px;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="employee1.jpg">
+            <h3>John</h3>
+            <p>Manager</p>
+            <p>john@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <img src="employee2.jpg">
+            <h3>Sarah</h3>
+            <p>Designer</p>
+            <p>sarah@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
+TASK19:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testimonials</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .testimonial {
+            width: 250px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="testimonial">Excellent service!</div>
+        <div class="testimonial">Great support team.</div>
+        <div class="testimonial">Highly recommended.</div>
+        <div class="testimonial">Very professional.</div>
+        <div class="testimonial">Amazing experience.</div>
+        <div class="testimonial">Loved the quality.</div>
+    </div>
+</body>
+</html>
+TASK20:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Footer</title>
+    <style>
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background: black;
+            color: white;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .section {
+            width: 200px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="section">
+            <h3>About</h3>
+            <p>We provide quality services.</p>
+        </div>
+
+        <div class="section">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="section">
+            <h3>Contact</h3>
+            <p>Email: info@gmail.com</p>
+            <p>Phone: 9876543210</p>
+        </div>
+
+        <div class="section">
+            <h3>Social Media</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
+TASK21:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+        <img src="img4.jpg">
+        <img src="img5.jpg">
+        <img src="img6.jpg">
+        <img src="img7.jpg">
+        <img src="img8.jpg">
+    </div>
+</body>
+</html>
+TASK22:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 400px 60px;
+            gap: 10px;
+        }
+
+        .header { grid-area: header; background: blue; color: white; }
+        .sidebar { grid-area: sidebar; background: gray; color: white; }
+        .main { grid-area: main; background: lightgray; }
+        .footer { grid-area: footer; background: black; color: white; }
+
+        div {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
+TASK23:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magazine Layout</title>
+    <style>
+        .magazine {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .featured {
+            grid-row: span 2;
+            background: lightblue;
+            padding: 20px;
+        }
+
+        .article {
+            background: lightgray;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="magazine">
+        <div class="featured">Featured Article</div>
+        <div class="article">Article 1</div>
+        <div class="article">Article 2</div>
+        <div class="article">Article 3</div>
+        <div class="article">Article 4</div>
+    </div>
+</body>
+</html>
+TASK24:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background: lightgreen;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="box">Attendance</div>
+        <div class="box">Marks</div>
+        <div class="box">Assignments</div>
+        <div class="box">Notifications</div>
+    </div>
+</body>
+</html>
+TASK25:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        .panel {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 80px auto 60px;
+            grid-template-areas:
+                "sidebar header"
+                "sidebar content"
+                "sidebar footer";
+            height: 100vh;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background: darkblue;
+            color: white;
+            padding: 20px;
+        }
+
+        .content {
+            grid-area: content;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="sidebar">Admin Menu</div>
+        <div class="header">Admin Header</div>
+        <div class="content">Manage Users, Reports, Settings</div>
+        <div class="footer">Admin Footer</div>
+    </div>
+</body>
+</html>
+TASK26:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Spinner</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 8px solid lightgray;
+            border-top: 8px solid blue;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+</body>
+</html>
+TASK27:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bouncing Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            background: red;
+            border-radius: 50%;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-250px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
+TASK28:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotating Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #fff;
+        }
+
+        img {
+            width: 150px;
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo">
+</body>
+</html>
+TASK29:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Bar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .progress-container {
+            width: 400px;
+            height: 30px;
+            background: lightgray;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 0;
+            height: 100%;
+            background: green;
+            animation: load 4s forwards;
+        }
+
+        @keyframes load {
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress"></div>
+    </div>
+</body>
+</html>
+TASK30:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing Effect</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+        }
+
+        .typing {
+            font-size: 30px;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid white;
+            width: 0;
+            animation: typing 4s steps(20) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            to {
+                width: 320px;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="typing">Welcome to CSS Animations!</div>
+</body>
+</html>
+TASK31:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Zoom Hover</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .image-box {
+            overflow: hidden;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-box">
+        <img src="image.jpg" alt="Image">
+    </div>
+</body>
+</html>
+TASK32:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotating Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .card {
+            width: 250px;
+            height: 300px;
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            transition: transform 1s;
+        }
+
+        .card:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">Hover Me</div>
+</body>
+</html>
+TASK33:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            background: blue;
+            color: white;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background: darkblue;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px gray;
+        }
+    </style>
+</head>
+<body>
+    <button>Hover Me</button>
+</body>
+</html>
+TASK34:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipping Product Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .inner {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+
+        .front img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .back {
+            background: white;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="inner">
+            <div class="front">
+                <img src="product.jpg" alt="Product">
+            </div>
+            <div class="back">
+                <h2>Product Details</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+TASK35:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        body {
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+        <img src="img4.jpg">
+    </div>
+</body>
+</html>
+TASK36:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        .login {
+            width: 350px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px gray;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            .login {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+    </div>
+</body>
+</html>
+TASK37:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: lightgray;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="product">Product 1</div>
+        <div class="product">Product 2</div>
+        <div class="product">Product 3</div>
+        <div class="product">Product 4</div>
+        <div class="product">Product 5</div>
+    </div>
+</body>
+</html>
+TASK38:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+            background: lightblue;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">About Me</div>
+        <div class="right">Projects</div>
+    </div>
+</body>
+</html>
+TASK39:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background: darkblue;
+            color: white;
+            padding: 20px;
+        }
+
+        .content {
+            background: lightgray;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">Departments</div>
+        <div class="content">College Information</div>
+    </div>
+</body>
+</html>
+TASK40:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .main {
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">Admin Menu</div>
+        <div class="main">Dashboard Content</div>
+    </div>
+</body>
+</html>
+TASK41:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Links</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: blue;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</body>
+</html>
+TASK42:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Button</title>
+    <style>
+        button {
+            position: relative;
+            padding: 15px 30px;
+            font-size: 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button::before {
+            content: "🔥 ";
+        }
+
+        button::after {
+            content: " →";
+        }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+</body>
+</html>
+TASK43:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Letter</title>
+    <style>
+        p::first-letter {
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>Welcome to learning CSS pseudo-elements.</p>
+</body>
+</html>
+TASK44:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Line</title>
+    <style>
+        p::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        CSS helps make webpages beautiful and responsive.
+        It allows styling, animations, layouts, and effects.
+    </p>
+</body>
+</html>
+TASK45:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Checkbox</title>
+    <style>
+        .checkbox {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .checkbox input {
+            display: none;
+        }
+
+        .checkmark {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background: lightgray;
+            border: 2px solid black;
+        }
+
+        .checkbox input:checked + .checkmark::after {
+            content: "✔";
+            position: absolute;
+            left: 4px;
+            top: 0;
+            color: green;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <label class="checkbox">
+        Accept Terms
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+</body>
+</html>
